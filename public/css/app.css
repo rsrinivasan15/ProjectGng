@@ -1,0 +1,279 @@
+#titleContainer {
+    width: 100%;
+    height: 58px;
+    opacity: 0.8;
+    background-color: #000;
+    color: #fff;
+    line-height: 58px;
+}
+
+#titleContainer .logout {
+    height: 32px;
+    line-height: 19px;
+    width: 80px;
+    margin-right: 20px;
+    margin-top: 12px;
+}
+
+#titleContainer .title_components {
+    margin-left: 25px;
+}
+
+#titleContainer .profile_pic {
+    margin-top: 4px;
+}
+
+#titleContainer .app_title {
+    font-family: "Brush Script MT", cursive;
+    font-size: 32px;
+}
+
+#titleContainer .app_title a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#loginContainer {
+    width: 450px;
+    position: absolute;
+    top: 40%;
+    right: 40%;
+    border: 1px solid #d3d3d3;
+    padding: 40px 15px;
+    background-color: #d3d3d3;
+    border-radius: 10px;
+    font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+    font-size: 18px;
+
+    -webkit-box-shadow: 8px 10px 14px 1px rgba(0,0,0,0.74);
+    -moz-box-shadow: 8px 10px 14px 1px rgba(0,0,0,0.74);
+    box-shadow: 8px 10px 14px 1px rgba(0,0,0,0.74);
+}
+
+#loginContainer .intro_text {
+    width: 300px;
+}
+
+#loginContainer .intro_text .first_line {
+    width: 267px;
+}
+
+#loginContainer .intro_text .second_line {
+    width: 345px;
+}
+
+#loginContainer .facebook_login {
+    width: 120px;
+    margin-top: 20px;
+}
+
+#loginContainer .login_text {
+    margin-bottom: 10px;
+}
+
+.float_right {
+    float: right;
+}
+
+.float_left {
+    float: left;
+}
+
+#newsFeedContainer {
+    min-height: 1000px;
+    overflow: scroll;
+}
+
+#createReview {
+    position: absolute;
+    top: 12px;
+    right: 586px;
+}
+
+.modal-content {
+    height: 422px;
+    position: absolute;
+    width: 614px;
+    top: 80px;
+    right: -143px;
+}
+
+body {
+    background-color: #d9d8d7 !important;
+}
+
+.content {
+    background-color: #fff;
+}
+
+#homeContentContainer {
+    width: 1000px;
+}
+
+#writeReviewContainer .review_area {
+    width: 570px;
+    height: 340px;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+    resize: none;
+}
+
+#writeReviewContainer #buttonContainer {
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.clubbed_buttons {
+    margin-left: 10px;
+}
+
+#suggestedFriendsContainer {
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+
+#suggestedFriendsContainer .suggested_friend_row {
+    width: 351px;
+    clear: both;
+    margin-top: 8px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+#suggestedFriendsContainer .suggested_friend_row .component {
+    margin-left: 12px;
+}
+
+#suggestedFriendsContainer .suggested_friend_row .suggested_friend_name {
+    margin-top: 6px;
+    font-weight: bold;
+    text-overflow: ellipsis;
+    width: 150px;
+}
+
+#suggestedFriendsContainer .suggested_friend_row .add_friend {
+    margin-top: 8px;
+}
+
+#suggestedFriendsContainer #titleContainer {
+    background-color: #c76a42;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 8px;
+    width: 366px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#suggestedFriendsContainer .no_suggested_friends {
+    margin: 4px 10px;
+}
+
+#myFriendsContainer {
+    width: 366px;
+    margin-top: 40px;
+    margin-left: 10px;
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+
+#myFriendsContainer #titleContainer {
+    background-color: #c76a42;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 8px;
+    width: 366px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#myFriendsContainer .my_friend_row {
+    margin: 5px;
+}
+
+#myFriendsContainer .component {
+    margin: 5px;
+}
+
+#myFriendsContainer .friend_name {
+    width: 100px;
+}
+
+#myFriendsContainer .no_friends {
+    margin: 4px 10px;
+}
+
+.review_feed .review_content {
+    clear: both;
+}
+
+.review_feed .individual_feed {
+    width: 600px;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 5px;
+    -webkit-box-shadow: 1px 3px 11px 2px rgba(0,0,0,0.74);
+    -moz-box-shadow: 1px 3px 11px 2px rgba(0,0,0,0.74);
+    box-shadow: 1px 3px 11px 2px rgba(0,0,0,0.74);
+}
+
+.review_feed .individual_feed .component {
+    margin: 6px;
+}
+
+.review_feed .friend_name.component {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.review_feed .reviewer_photo.component {
+    margin-bottom: 20px;
+}
+
+.review_feed .empty_feed.individual_feed {
+    height: 500px;
+    padding-top: 220px;
+    padding-left: 192px;
+}
+
+#userIntro {
+    width: 1800px;
+    margin-left: 200px;
+    margin-top: 50px;
+}
+
+#userIntro .name {
+    position: relative;
+    right: -16px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#userIntro img {
+    width: 100px;
+    height: 100px;
+}
+
+#userPageContainer #newsFeedContainer {
+    margin-top: 31px;
+    margin-left: 190px;
+}
+
+#titleContainer .home {
+    margin-right: 50px;
+}
+
+#titleContainer .title_link {
+    color: #fff;
+}
+
+#titleContainer .title_link:hover {
+    text-decoration: none;
+    color: #808080;
+}

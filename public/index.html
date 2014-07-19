@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <title>Project GnG</title>
+        <link rel="shortcut icon" href="images/faviicon.png" type="image/png">
+    </head>
+
+    <body data-ng-app="ExpressApp">
+        <div id="appContainer" data-ng-controller="AppController">
+
+            <div id="titleContainer">
+                <div class="app_title float_left title_components"> <a href="/home">Project GnG</a> </div>
+                <div data-ng-show="userInformation.isLoggedIn" class="float_right">
+                    <div class="first_name_display float_left title_components"> <a class="home title_link" href="/home"> Home </a> Welcome &nbsp;   <a class="title_link" data-ng-href="/user/{{ userInformation.facebookId }}"> {{ userInformation.firstName }} </a> </div>
+                    <a data-ng-href="/user/{{ userInformation.facebookId }}"><img class="profile_pic float_left title_components" data-ng-src="{{ userInformation.profilePicture }}">  </img></a>
+                    <button class="logout float_left btn btn-danger title_components" data-ng-click="logout()">Logout</button>
+                </div>
+            </div>
+
+            <div data-ng-view />
+        </div>
+
+
+
+        <script src="js/lib/angular.js"></script>
+        <script src="js/lib/angular-route.js"></script>
+        <script src="js/lib/angular-cookies.js"></script>
+        <script src="js/lib/ui-bootstrap-tpls-0.11.0.min.js"></script>
+        <script src="js/lib/underscore.js"></script>
+        <script src="js/lib/angular-facebook.js"></script>
+        <script src="js/src/ExpressApp/ExpressApp.js"></script>
+        <script src="js/src/ExpressApp/config/route.js"></script>
+        <script src="js/src/FacebookLogin/FacebookLogin.js"></script>
+        <script src="js/src/ExpressApp/controllers/AppController.js"></script>
+        <script src="js/src/FacebookLogin/services/FacebookLoginService.js"></script>
+        <script src="js/src/FacebookLogin/controllers/FacebookLoginController.js"></script>
+        <script src="js/src/ExpressApp/controllers/CreateReviewController.js"></script>
+        <script src="js/src/ExpressApp/services/UserInformation.js"></script>
+        <script src="js/src/ExpressApp/controllers/LoginController.js"></script>
+        <script src="js/src/ExpressApp/controllers/HomeController.js"></script>
+        <script src="js/src/ExpressApp/controllers/SuggestedFriendsController.js"></script>
+        <script src="js/src/ExpressApp/directives/userFriends.js"></script>
+        <script src="js/src/ExpressApp/directives/reviewFeed.js"></script>
+        <script src="js/src/ExpressApp/controllers/UserPageController.js"></script>
+    </body>
+
+
+</html>

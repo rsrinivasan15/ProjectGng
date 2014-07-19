@@ -1,0 +1,15 @@
+<div data-ng-controller="SuggestedFriendsController">
+    <div id="titleContainer">
+        Suggested Friends
+    </div>
+
+    <div class="no_suggested_friends" data-ng-show="suggestedFriends.length == 0">
+        You have added all the users in the network.
+    </div>
+
+    <div class="suggested_friend_row" data-ng-repeat="friend in suggestedFriends">
+        <a data-ng-href="/user/{{ friend.facebookId }}"><img class="suggested_friend_profile_pic component pull-left" data-ng-src="{{ friend.profilePicture }}"></img></a>
+        <a data-ng-href="/user/{{ friend.facebookId }}"><div class="suggested_friend_name component pull-left">{{ friend.firstName}} <br> {{ friend.lastName }}</div></a>
+        <button class="btn add_friend btn-primary component pull-right" data-ng-click="addFriend(friend)"> +  Add Friend</button>
+    </div>
+</div>

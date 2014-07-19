@@ -1,0 +1,18 @@
+<div id="homeContainer">
+    <button id="createReview" class="btn btn-primary" data-ng-click="createReview()">Create Review</button>
+
+    <div id="homeContentContainer" class="center-block">
+        <div id="newsFeedContainer" class="pull-left">
+            <div data-review-feed data-reviews="reviews" data-own="true"></div>
+        </div>
+
+        <div id="suggestedFriendsContainer" class="pull-left content">
+            <div data-ng-include="'js/src/ExpressApp/templates/suggested_friends.html'"></div>
+        </div>
+
+        <div id="myFriendsContainer" class="pull-left content">
+            <div data-user-friends data-user-id="userInformation.facebookId" data-own="true" data-title-name="My"></div>
+        </div>
+    </div>
+
+</div>

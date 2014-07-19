@@ -1,0 +1,16 @@
+<div id="userPageContainer">
+    <div id="userPageContentContainer" class="center-block">
+        <div id="userIntro" class="pull-left">
+            <img class="pull-left" data-ng-src="{{ userPageInformation.profilePicture }}">
+            <div class="pull-left name">{{ userPageInformation.firstName }} <br> {{ userPageInformation.lastName }}</div>
+        </div>
+        <div id="newsFeedContainer" class="pull-left">
+            <div data-review-feed data-reviews="userReviews"></div>
+        </div>
+
+        <div id="myFriendsContainer" class="pull-left content">
+            <div data-user-friends data-user-id="userFacebookId" data-title-name="{{ userPageInformation.firstName}}"></div>
+        </div>
+    </div>
+
+</div>

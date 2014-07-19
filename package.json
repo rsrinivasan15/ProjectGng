@@ -1,0 +1,20 @@
+{
+  "name": "projectGnG",
+  "version": "0.0.1",
+  "description": "Test project GnG",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "dependencies": {
+   	"express": "4.x",
+   	"serve-static": "1.x",
+   	"seraph": "0.x",
+   	"body-parser": "1.x",
+   	"morgan": "1.x",
+   	"async": "0.x"
+  },
+  "author": "Ramprasad Srinivasan",
+  "license": "ISC"
+}

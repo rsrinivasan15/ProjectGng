@@ -1,0 +1,18 @@
+<div>
+    <div id="titleContainer">
+       {{ titleName }} Friends
+    </div>
+
+    <div class="no_friends" data-ng-show="userInformation.friends.length == 0">
+        <span data-ng-show="own">Add Friends to see something on your News Feed.</span>
+        <span data-ng-show="!own">No friends for this user</span>
+
+    </div>
+
+    <div id="friendListContainer">
+        <div class="my_friend_row pull-left" data-ng-repeat="friend in userInformation.friends">
+            <a data-ng-href="/user/{{ friend.facebookId }}"><img class="my_friend_profile_pic component pull-left" data-ng-src="{{ friend.profilePicture }}"></img></a>
+            <a data-ng-href="/user/{{ friend.facebookId }}"><div class="friend_name component pull-left">{{ friend.firstName}} <br> {{ friend.lastName }}</div></a>
+        </div>
+    </div>
+</div>

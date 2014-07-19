@@ -1,0 +1,7 @@
+<div id="writeReviewContainer">
+    <textarea class="review_area center-block" placeholder="Write Review" data-ng-model="model.reviewContent"></textarea>
+    <div id="buttonContainer" class="pull-right">
+        <button class="logout float_left btn btn-primary clubbed_buttons" data-ng-disabled="model.reviewContent == null || model.reviewContent == ''" data-ng-click="create()">Create</button>
+        <button class="logout float_left btn btn-default clubbed_buttons" data-ng-click="cancel()">Cancel</button>
+    </div>
+</div>

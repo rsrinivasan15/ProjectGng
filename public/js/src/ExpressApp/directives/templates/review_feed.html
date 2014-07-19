@@ -1,0 +1,15 @@
+<div class="review_feed">
+    <div class="empty_feed individual_feed" data-ng-show="reviews.length == 0">
+        <span data-ng-show="own">Either you don't have friends or <br> none of you friends wrote reviews.</span>
+        <span data-ng-show="!own">This user has not written any reviews.</span>
+
+    </div>
+
+    <div class="individual_feed" data-ng-repeat="review in reviews">
+        <div class="reviewer_info">
+            <a data-ng-href="/user/{{ review.friend.facebookId }}"><img class="reviewer_photo component pull-left" data-ng-src="{{ review.friend.profilePicture }}" /></a>
+            <a data-ng-href="/user/{{ review.friend.facebookId }}"><div class="friend_name component pull-left">{{ review.friend.firstName + " " + review.friend.lastName }}</div></a>
+        </div>
+        <div class="review_content component">{{ review.review.reviewContent }}</div>
+    </div>
+</div>
