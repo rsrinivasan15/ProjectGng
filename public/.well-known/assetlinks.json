@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "reviewapp.heroku.reviewapp",
+    "sha256_cert_fingerprints":
+    ["10:D7:EB:48:1F:D2:02:3B:99:FD:95:43:E9:D6:60:63:5B:2A:2C:D6:C2:D1:A4:F5:74:EF:D0:C5:2E:57:33:73"]
+  }
+}]
